@@ -3,7 +3,7 @@ Imports System.Data
 
 Public Class ThuVien
 
-
+    ' 1. Hàm Kết Nối - Trả về một SqlConnection đang mở
     Public Function KetNoi() As SqlConnection
         ' Sử dụng đường dẫn tuyệt đối tới file .mdf thực tế
         Dim duongDan As String =
