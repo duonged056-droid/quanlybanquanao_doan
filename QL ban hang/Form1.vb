@@ -1,6 +1,6 @@
 ﻿Public Class Form1
 
-    ' Biến trạng thái đăng nhập
+
     Public Shared IsLoggedIn As Boolean = False
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
