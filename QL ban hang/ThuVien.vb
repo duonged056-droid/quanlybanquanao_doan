@@ -3,7 +3,7 @@ Imports System.Data
 
 Public Class ThuVien
 
-
+https://github.com/duonged056-droid/quanlybanquanao_doan/tree/master/QL%20ban%20hang
     Public Function KetNoi() As SqlConnection
         ' Sử dụng đường dẫn tuyệt đối tới file .mdf thực tế
         Dim duongDan As String =
