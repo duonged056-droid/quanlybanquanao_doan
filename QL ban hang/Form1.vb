@@ -44,7 +44,7 @@
         End If
 
         Dim f As New frmHoaDon
-        f.Show()
+        f.ShowDialog()
     End Sub
 
     ' Thoát chương trình
@@ -62,10 +62,6 @@
             Dim frmDangNhap As New frmDangNhap()
             frmDangNhap.Show()
         End If
-    End Sub
-
-    Public Sub HienAnhDangNhap()
-        ' nếu muốn hiển thị ảnh sau khi đăng nhập thì viết code ở đây
     End Sub
 
     ' Doanh thu bán hàng
