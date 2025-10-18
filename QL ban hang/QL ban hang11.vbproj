@@ -259,10 +259,6 @@
     <Content Include="QLBanQuanAo1.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="QLBanQuanAo1_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>QLBanQuanAo1.mdf</DependentUpon>
-    </Content>
     <None Include="Resources\Image1.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

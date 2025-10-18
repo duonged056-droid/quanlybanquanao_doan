@@ -1,4 +1,6 @@
-﻿Public Class Form1
+﻿Imports System.Data.SqlClient
+
+Public Class Form1
 
     ' Biến trạng thái đăng nhập
     Public Shared IsLoggedIn As Boolean = False
@@ -6,8 +8,14 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim f As New ThuVien()
         f.KetNoi()
+
+
+
+        ' Reset trạng thái đăng nhập
+        IsLoggedIn = False
     End Sub
 
+    ' --- các phần còn lại giữ nguyên ---
     ' Mặt hàng
     Private Sub MatHangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MatHangToolStripMenuItem.Click
         If IsLoggedIn = False Then
@@ -73,10 +81,6 @@
 
         Dim f As New frmThongKeDoanhThu
         f.Show()
-    End Sub
-
-    Private Sub HeThongToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HeThongToolStripMenuItem.Click
-        ' menu hệ thống nếu cần xử lý thêm
     End Sub
 
 End Class
