@@ -3,14 +3,14 @@ Imports System.Data
 
 Public Class ThuVien
 
-https://github.com/duonged056-droid/quanlybanquanao_doan/tree/master/QL%20ban%20hang
+    ' 1. Hàm Kết Nối - Trả về một SqlConnection đang mở
     Public Function KetNoi() As SqlConnection
-        ' Sử dụng đường dẫn tuyệt đối tới file .mdf thực tế
-        Dim duongDan As String =
-            "Data Source=(LocalDB)\MSSQLLocalDB;" &
-            "AttachDbFilename=C:\Users\Admin\Downloads\QL BAN HANG\QL BAN HANG\bin\Debug\QLBANQUANAO1.mdf;" &
-            "Integrated Security=True;Connect Timeout=30"
 
+        Dim duongDan As String =
+            "Data Source=HoangDuong\SQLEXPRESS;" &
+            "Initial Catalog=QLSHOPBANQUANAO;" &
+            "User ID=sa;Password=123;" &
+            "Connect Timeout=30"
         Dim conn As New SqlConnection(duongDan)
 
         Try
